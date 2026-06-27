@@ -64,7 +64,7 @@ function AboutPage() {
         </div>
       </Section>
 
-      <Section tone="sage">
+      <Section tone="sage" containerClassName="py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <Eyebrow>Our Mission</Eyebrow>
