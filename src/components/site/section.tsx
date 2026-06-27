@@ -3,11 +3,13 @@ import type { ReactNode } from "react";
 export function Section({
   children,
   className = "",
+  containerClassName = "",
   tone = "cream",
   id,
 }: {
   children: ReactNode;
   className?: string;
+  containerClassName?: string;
   tone?: "cream" | "sage" | "blush" | "white";
   id?: string;
 }) {
@@ -19,7 +21,7 @@ export function Section({
   }[tone];
   return (
     <section id={id} className={`${bg} ${className}`}>
-      <div className="container-narrow py-16 md:py-24">{children}</div>
+      <div className={`container-narrow py-16 md:py-24 ${containerClassName}`}>{children}</div>
     </section>
   );
 }
