@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import { SITE } from "./contact-info";
+import logo from "@/assets/abd-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -8,7 +9,7 @@ export function SiteFooter() {
       <div className="container-narrow grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-forest text-cream font-display">A</span>
+            <img src={logo.url} alt="ABD Compassion Home Care LLC logo" className="h-12 w-12 object-contain" />
             <span className="font-display text-lg text-forest">{SITE.name}</span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">{SITE.tagline}</p>

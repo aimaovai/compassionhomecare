@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import logo from "../assets/abd-logo.png.asset.json";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "../components/site/header";
 import { SiteFooter } from "../components/site/footer";
@@ -88,8 +89,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Compassionate, dependable in-home care across Greater Houston." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:image", content: logo.url },
+      { name: "twitter:image", content: logo.url },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: logo.url },
+      { rel: "apple-touch-icon", href: logo.url },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
