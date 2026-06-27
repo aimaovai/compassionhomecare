@@ -32,7 +32,7 @@ const values = [
 function AboutPage() {
   return (
     <>
-      <Section tone="cream">
+      <Section tone="cream" containerClassName="pt-6 md:pt-8 pb-14 md:pb-20">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <img
