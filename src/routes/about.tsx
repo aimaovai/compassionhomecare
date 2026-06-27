@@ -86,7 +86,7 @@ function AboutPage() {
         </div>
       </Section>
 
-      <Section tone="cream">
+      <Section tone="cream" containerClassName="py-12 md:py-16">
         <SectionHeading eyebrow="Our Values" title="The principles behind every visit" center />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((v) => (
@@ -101,7 +101,7 @@ function AboutPage() {
         </div>
       </Section>
 
-      <Section tone="blush">
+      <Section tone="blush" containerClassName="py-12 md:py-16">
         <SectionHeading eyebrow="Trust & Safety" title="Licensing, Training & Safety" />
         <div className="mt-6 rounded-3xl border border-border bg-card p-6 md:p-8">
           <p className="text-foreground/80">
