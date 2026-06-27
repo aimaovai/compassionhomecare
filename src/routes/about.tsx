@@ -35,8 +35,12 @@ function AboutPage() {
       <Section tone="cream">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <Eyebrow>About</Eyebrow>
-            <h1 className="mt-3 text-4xl font-semibold leading-tight md:text-5xl">
+            <img
+              src={logo.url}
+              alt="ABD Compassion Home Care LLC logo"
+              className="h-28 w-auto object-contain md:h-36"
+            />
+            <h1 className="mt-5 text-4xl font-semibold leading-tight md:text-5xl">
               About {SITE.name}
             </h1>
             <p className="mt-5 text-foreground/80 md:text-lg">
