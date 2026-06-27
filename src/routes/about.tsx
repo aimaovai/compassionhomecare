@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Heart, Shield, Sparkles, Users, HandHeart, Award } from "lucide-react";
 import caregiverImg from "@/assets/caregiver-walk.jpg";
+import logo from "@/assets/abd-logo.png.asset.json";
 import { Section, SectionHeading, Eyebrow } from "@/components/site/section";
 import { CallButton, ConsultButton } from "@/components/site/cta-buttons";
 import { SITE } from "@/components/site/contact-info";
