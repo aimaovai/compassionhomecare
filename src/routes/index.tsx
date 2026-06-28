@@ -31,6 +31,29 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "ABD Compassion Home Care LLC",
+          url: "https://compassionhomecare.lovable.app",
+          telephone: "[Insert Phone Number]",
+          email: "[Insert Email Address]",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "[Insert Office Address]",
+            addressRegion: "TX",
+            addressCountry: "US",
+          },
+          areaServed: ["Houston", "Katy", "Cypress", "Richmond", "Fulshear", "Pearland"].map((c) => ({
+            "@type": "City",
+            name: c,
+          })),
+        }),
+      },
+    ],
   }),
   component: HomePage,
 });

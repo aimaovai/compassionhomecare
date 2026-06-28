@@ -7,7 +7,7 @@ import { SITE } from "@/components/site/contact-info";
 export const Route = createFileRoute("/service-areas")({
   head: () => ({
     meta: [
-      { title: "Service Areas | Home Care in Houston, Katy, Cypress, Richmond, Fulshear & Pearland" },
+      { title: "Service Areas | Greater Houston Home Care" },
       { name: "description", content: "ABD Compassion Home Care LLC serves families in Houston, Katy, Cypress, Richmond, Fulshear, Pearland, and nearby communities." },
       { property: "og:title", content: "Service Areas — Greater Houston" },
       { property: "og:description", content: "Compassionate in-home care across Greater Houston." },

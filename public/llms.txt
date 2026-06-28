@@ -1,0 +1,20 @@
+# ABD Compassion Home Care LLC
+
+> Compassionate, dependable in-home care for individuals and families across Greater Houston — Houston, Katy, Cypress, Richmond, Fulshear, and Pearland, TX.
+
+ABD Compassion Home Care LLC provides personalized in-home care including personal care assistance, companionship, meal preparation, medication reminders, light housekeeping, respite care, transportation, post-hospital support, dementia and Alzheimer's support, and 24-hour or live-in care.
+
+## Pages
+
+- [Home](/): Overview of services and service areas across Greater Houston.
+- [About](/about): Mission, values, and approach to compassionate home care.
+- [Services](/services): Detailed list of in-home care services offered.
+- [Service Areas](/service-areas): Cities served — Houston, Katy, Cypress, Richmond, Fulshear, Pearland.
+- [Book a Consultation](/book-consultation): Request a free care consultation.
+- [Careers](/careers): Caregiver job opportunities and application.
+- [FAQ](/faq): Common questions about home care services and getting started.
+- [Contact](/contact): Phone, email, hours, and office location.
+
+## Optional
+
+- [Privacy Policy](/privacy-policy): How we handle information submitted through the site.
