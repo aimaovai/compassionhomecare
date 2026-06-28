@@ -84,6 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "ABD Compassion Home Care | Greater Houston" },
       { name: "description", content: "ABD Compassion Home Care LLC provides compassionate in-home care support for families across Greater Houston. Call today to request a consultation." },
       { name: "author", content: "ABD Compassion Home Care LLC" },
+      { name: "google-site-verification", content: "o_eK0xNf-JSgjvYDq-KYduTewq4UwkyqwVcnT8eacx0" },
       { property: "og:site_name", content: "ABD Compassion Home Care LLC" },
       { property: "og:title", content: "ABD Compassion Home Care | Greater Houston" },
       { property: "og:description", content: "ABD Compassion Home Care LLC provides compassionate in-home care support for families across Greater Houston. Call today to request a consultation." },
