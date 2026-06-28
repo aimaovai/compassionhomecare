@@ -81,17 +81,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ABD Compassion Home Care LLC | Home Care in Houston, Katy, Cypress, Richmond, Fulshear & Pearland" },
+      { title: "ABD Compassion Home Care | Greater Houston" },
       { name: "description", content: "ABD Compassion Home Care LLC provides compassionate in-home care support for families across Greater Houston. Call today to request a consultation." },
       { name: "author", content: "ABD Compassion Home Care LLC" },
       { property: "og:site_name", content: "ABD Compassion Home Care LLC" },
-      { property: "og:title", content: "ABD Compassion Home Care LLC | Home Care in Houston, Katy, Cypress, Richmond, Fulshear & Pearland" },
+      { property: "og:title", content: "ABD Compassion Home Care | Greater Houston" },
       { property: "og:description", content: "ABD Compassion Home Care LLC provides compassionate in-home care support for families across Greater Houston. Call today to request a consultation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { property: "og:image", content: logo.url },
       { name: "twitter:image", content: logo.url },
-      { name: "twitter:title", content: "ABD Compassion Home Care LLC | Home Care in Houston, Katy, Cypress, Richmond, Fulshear & Pearland" },
+      { name: "twitter:title", content: "ABD Compassion Home Care | Greater Houston" },
       { name: "twitter:description", content: "ABD Compassion Home Care LLC provides compassionate in-home care support for families across Greater Houston. Call today to request a consultation." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3f3274c0-61f6-4fbd-8d6e-4251831cefa1" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3f3274c0-61f6-4fbd-8d6e-4251831cefa1" },
@@ -108,6 +108,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://compassionhomecare.lovable.app/#organization",
+              name: "ABD Compassion Home Care LLC",
+              url: "https://compassionhomecare.lovable.app",
+              logo: logo.url,
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://compassionhomecare.lovable.app/#website",
+              url: "https://compassionhomecare.lovable.app",
+              name: "ABD Compassion Home Care LLC",
+              publisher: { "@id": "https://compassionhomecare.lovable.app/#organization" },
+            },
+          ],
+        }),
       },
     ],
   }),
