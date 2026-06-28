@@ -22,6 +22,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/careers", changefreq: "monthly", priority: "0.7" },
           { path: "/faq", changefreq: "monthly", priority: "0.6" },
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
+          { path: "/guides/home-care-costs-houston", changefreq: "monthly", priority: "0.7" },
           { path: "/privacy-policy", changefreq: "monthly", priority: "0.3" },
         ];
 

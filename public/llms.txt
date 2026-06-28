@@ -15,6 +15,10 @@ ABD Compassion Home Care LLC provides personalized in-home care including person
 - [FAQ](/faq): Common questions about home care services and getting started.
 - [Contact](/contact): Phone, email, hours, and office location.
 
+## Guides
+
+- [Cost of Home Care in Houston](/guides/home-care-costs-houston): Average hourly rates, private pay vs. insurance, and factors affecting total cost.
+
 ## Optional
 
 - [Privacy Policy](/privacy-policy): How we handle information submitted through the site.
