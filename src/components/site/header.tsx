@@ -9,6 +9,7 @@ const NAV = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/service-areas", label: "Service Areas" },
+  { to: "/guides/home-care-costs-houston", label: "Cost Guide" },
   { to: "/careers", label: "Careers" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },
@@ -26,12 +27,12 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-1 xl:flex">
           {NAV.map((n) => (
             <Link
               key={n.to}
               to={n.to}
-              className="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-sage-soft hover:text-forest"
+              className="rounded-full px-2 py-2 text-sm font-medium text-foreground/80 transition hover:bg-sage-soft hover:text-forest lg:px-3"
               activeProps={{ className: "bg-sage-soft text-forest" }}
               activeOptions={{ exact: n.to === "/" }}
             >
@@ -58,7 +59,7 @@ export function SiteHeader() {
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-forest lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-forest xl:hidden"
           onClick={() => setOpen((o) => !o)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -66,7 +67,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-cream lg:hidden">
+        <div className="border-t border-border bg-cream xl:hidden">
           <div className="container-narrow flex flex-col gap-1 py-4">
             {NAV.map((n) => (
               <Link

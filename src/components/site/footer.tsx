@@ -27,6 +27,7 @@ export function SiteFooter() {
             <li><Link to="/about" className="hover:text-forest">About Us</Link></li>
             <li><Link to="/services" className="hover:text-forest">Services</Link></li>
             <li><Link to="/book-consultation" className="hover:text-forest">Book Consultation</Link></li>
+            <li><Link to="/guides/home-care-costs-houston" className="hover:text-forest">Home Care Costs in Houston</Link></li>
             <li><Link to="/careers" className="hover:text-forest">Careers</Link></li>
             <li><Link to="/faq" className="hover:text-forest">FAQ</Link></li>
             <li><Link to="/contact" className="hover:text-forest">Contact</Link></li>
